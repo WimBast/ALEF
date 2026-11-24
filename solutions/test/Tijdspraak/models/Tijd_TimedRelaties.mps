@@ -97,12 +97,22 @@
         <reference id="6527873696160724967" name="type" index="4OhPH" />
         <child id="6527873696160724965" name="eigenschappen" index="4OhPJ" />
       </concept>
+      <concept id="2968276045130681631" name="testspraak.structure.Feit" flags="ng" index="8oq99">
+        <child id="6100382106380035967" name="waarde" index="8hCTb" />
+        <child id="2968276045131354263" name="rola" index="8qBZ1" />
+        <child id="2875613340478298330" name="rolb" index="3hvmf2" />
+      </concept>
+      <concept id="2968276045130683634" name="testspraak.structure.FeitenGroep" flags="ng" index="8orI$">
+        <reference id="2968276045130686495" name="rol" index="8ooX9" />
+        <child id="2968276045130690786" name="feiten" index="8opYO" />
+      </concept>
       <concept id="7037334947758586263" name="testspraak.structure.TeTestenRegelgroep" flags="ng" index="vfxHe">
         <reference id="7037334947758586267" name="ref" index="vfxH2" />
       </concept>
       <concept id="7760345304267117455" name="testspraak.structure.IAbstractTest" flags="ngI" index="10x1HZ">
         <child id="6527873696160724992" name="situatie" index="4Ohaa" />
         <child id="6527873696160725067" name="resultaat" index="4Ohb1" />
+        <child id="2968276045130666471" name="situatieFeiten" index="8ovUL" />
       </concept>
       <concept id="6363260678693757779" name="testspraak.structure.UitvoerVoorspelling" flags="ng" index="3mzBic">
         <property id="3984684955933690575" name="decimalen" index="V2jGk" />
@@ -158,6 +168,9 @@
       <concept id="5491658850346352820" name="gegevensspraak.structure.Rol" flags="ng" index="2mG0Ck">
         <property id="6528193855467705353" name="single" index="u$DAK" />
         <reference id="4170820228911721549" name="objectType" index="1fE_qF" />
+      </concept>
+      <concept id="4697074533531324619" name="gegevensspraak.structure.BooleanLiteral" flags="ng" index="2Jx4MH">
+        <property id="4697074533531324626" name="waarde" index="2Jx4MO" />
       </concept>
       <concept id="1788186806698835690" name="gegevensspraak.structure.EenheidMacht" flags="ng" index="Pwxi7">
         <property id="1788186806698835691" name="exponent" index="Pwxi6" />
@@ -450,6 +463,18 @@
     <property role="TrG5h" value="TimedRelatiesTesten" />
     <node concept="210ffa" id="jLMINubk40" role="10_$IM">
       <property role="TrG5h" value="001" />
+      <node concept="8orI$" id="2$LrPoxqnAm" role="8ovUL">
+        <ref role="8ooX9" node="jLMINubk2$" resolve="kind" />
+        <node concept="8oq99" id="2$LrPoxqqs2" role="8opYO">
+          <node concept="4PMub" id="2MkFhHJqdUF" role="8qBZ1">
+            <ref role="4PMuN" node="jLMINubk48" resolve="Dochter1" />
+          </node>
+          <node concept="4PMub" id="2MkFhHJqehq" role="3hvmf2">
+            <ref role="4PMuN" node="jLMINubk45" resolve="Moeder1" />
+          </node>
+          <node concept="2Jx4MH" id="5iCUjhDK6B0" role="8hCTb" />
+        </node>
+      </node>
       <node concept="4Oh8J" id="jLMINubk44" role="4Ohb1">
         <ref role="4Oh8G" node="jLMINubk2f" resolve="ouder" />
         <ref role="3teO_M" node="jLMINubk45" resolve="Moeder1" />
@@ -811,6 +836,59 @@
     </node>
     <node concept="210ffa" id="139sEQEKpue" role="10_$IM">
       <property role="TrG5h" value="002" />
+      <node concept="8orI$" id="5H7hYgCgxVF" role="8ovUL">
+        <ref role="8ooX9" node="jLMINubk2$" resolve="kind" />
+        <node concept="8oq99" id="5H7hYgCgyFG" role="8opYO">
+          <node concept="4PMub" id="5H7hYgCgyFH" role="8qBZ1">
+            <ref role="4PMuN" node="139sEQEKpvE" resolve="Dochter1" />
+          </node>
+          <node concept="4PMub" id="5H7hYgCgyFI" role="3hvmf2">
+            <ref role="4PMuN" node="139sEQEKpuR" resolve="Moeder1" />
+          </node>
+          <node concept="iJZ9l" id="5H7hYgChqVm" role="8hCTb">
+            <node concept="3eh0X$" id="5H7hYgChqVn" role="3eh0KJ">
+              <node concept="2Jx4MH" id="5H7hYgChqVj" role="3eh0Lf">
+                <property role="2Jx4MO" value="true" />
+              </node>
+              <node concept="2ljiaL" id="5H7hYgChqVk" role="3haOjb">
+                <property role="2ljiaM" value="15" />
+                <property role="2ljiaN" value="1" />
+                <property role="2ljiaO" value="2020" />
+              </node>
+              <node concept="2ljiaL" id="5H7hYgChqVl" role="3haOjf">
+                <property role="2ljiaM" value="18" />
+                <property role="2ljiaN" value="10" />
+                <property role="2ljiaO" value="2038" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="8oq99" id="5H7hYgCgzQB" role="8opYO">
+          <node concept="4PMub" id="5H7hYgCgzQC" role="8qBZ1">
+            <ref role="4PMuN" node="139sEQEKpvk" resolve="Zoon1" />
+          </node>
+          <node concept="4PMub" id="5H7hYgCgzQD" role="3hvmf2">
+            <ref role="4PMuN" node="139sEQEKpuR" resolve="Moeder1" />
+          </node>
+          <node concept="iJZ9l" id="5H7hYgChr9J" role="8hCTb">
+            <node concept="3eh0X$" id="5H7hYgChr9K" role="3eh0KJ">
+              <node concept="2Jx4MH" id="5H7hYgChr9G" role="3eh0Lf">
+                <property role="2Jx4MO" value="true" />
+              </node>
+              <node concept="2ljiaL" id="5H7hYgChr9H" role="3haOjb">
+                <property role="2ljiaM" value="15" />
+                <property role="2ljiaN" value="5" />
+                <property role="2ljiaO" value="2023" />
+              </node>
+              <node concept="2ljiaL" id="5H7hYgChr9I" role="3haOjf">
+                <property role="2ljiaM" value="18" />
+                <property role="2ljiaN" value="10" />
+                <property role="2ljiaO" value="2038" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="4OhPC" id="139sEQEKpuR" role="4Ohaa">
         <property role="TrG5h" value="Moeder1" />
         <ref role="4OhPH" node="jLMINubk2f" resolve="ouder" />
@@ -950,6 +1028,10 @@
       <node concept="4OhPC" id="139sEQEKpvE" role="4Ohaa">
         <property role="TrG5h" value="Dochter1" />
         <ref role="4OhPH" node="jLMINubk2h" resolve="kind" />
+        <node concept="3_ceKt" id="5H7hYgCg_xg" role="4OhPJ">
+          <ref role="3_ceKs" node="jLMINubk2_" resolve="ouder" />
+          <node concept="4PMua" id="5H7hYgCg_Fy" role="3_ceKu" />
+        </node>
       </node>
       <node concept="4Oh8J" id="139sEQEKpw0" role="4Ohb1">
         <ref role="4Oh8G" node="jLMINubk2h" resolve="kind" />

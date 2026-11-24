@@ -22,6 +22,7 @@
     <import index="wrck" ref="r:ea76656e-adc2-4c94-b937-dbef9f83e861(contexts.behavior)" />
     <import index="2vij" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.alef_runtime(alef.runtime/)" />
     <import index="n5dx" ref="r:49dfe53e-0a88-4e48-90c5-597090c5e903(mpsUtils)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="dse8" ref="r:bbb1f8ef-a8a5-48ec-918c-331fca20e41c(interpreter.debug.structure)" implicit="true" />
     <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" implicit="true" />
     <import index="f6cw" ref="r:57bbe3fc-bd7c-495c-b829-0fc2a7cfe592(bronspraak.structure)" implicit="true" />
@@ -351,6 +352,7 @@
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -2053,6 +2055,25 @@
               </node>
             </node>
           </node>
+          <node concept="3cpWs8" id="2MkFhHMlrSa" role="3cqZAp">
+            <node concept="3cpWsn" id="2MkFhHMlrSb" role="3cpWs9">
+              <property role="TrG5h" value="link" />
+              <node concept="3uibUv" id="2MkFhHMlr_h" role="1tU5fm">
+                <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+              </node>
+              <node concept="3K4zz7" id="2MkFhHMlrSc" role="33vP2m">
+                <node concept="2OqwBi" id="2MkFhHMlrSd" role="3K4E3e">
+                  <node concept="3kakTB" id="2MkFhHMlrSe" role="2Oq$k0" />
+                  <node concept="2NL2c5" id="2MkFhHMlrSf" role="2OqNvi" />
+                </node>
+                <node concept="3dgs5T" id="2MkFhHMlrSg" role="3K4GZi" />
+                <node concept="3clFbC" id="2MkFhHMlrSh" role="3K4Cdx">
+                  <node concept="10Nm6u" id="2MkFhHMlrSi" role="3uHU7w" />
+                  <node concept="3dgs5T" id="2MkFhHMlrSj" role="3uHU7B" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="5EnECDugfO_" role="3cqZAp">
             <node concept="2YIFZM" id="5EnECDugfOB" role="3clFbG">
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
@@ -2063,6 +2084,9 @@
                 </node>
                 <node concept="2qgKlT" id="2dDYc3aXzP8" role="2OqNvi">
                   <ref role="37wK5l" to="8l26:5EnECDug8Pa" resolve="objects" />
+                  <node concept="37vLTw" id="2MkFhHMlrSk" role="37wK5m">
+                    <ref role="3cqZAo" node="2MkFhHMlrSb" resolve="link" />
+                  </node>
                 </node>
               </node>
             </node>

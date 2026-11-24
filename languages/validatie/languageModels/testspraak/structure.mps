@@ -223,6 +223,9 @@
     <node concept="PrWs8" id="652HH6iM7lW" role="PzmwI">
       <ref role="PrY4T" to="f6cw:1MP9utIs32t" resolve="IHaveMetatags" />
     </node>
+    <node concept="PrWs8" id="2MkFhHP5afk" role="PzmwI">
+      <ref role="PrY4T" to="3ic2:5EnECDug8OY" resolve="IObjectProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="58tBIcSsgcg">
     <property role="TrG5h" value="Toekenning" />
@@ -349,6 +352,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5EnECDuhFvy" resolve="Instantie" />
     </node>
+    <node concept="1TJgyj" id="2$LrPoxk97B" role="1TKVEi">
+      <property role="IQ2ns" value="2968276045130666471" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="situatieFeiten" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2$LrPoxkdjM" resolve="FeitenGroep" />
+    </node>
     <node concept="1TJgyj" id="5EnECDuhFxb" role="1TKVEi">
       <property role="IQ2ns" value="6527873696160725067" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -361,6 +371,13 @@
     </node>
     <node concept="PrWs8" id="6IMif0FlZ2Q" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2$LrPoxkc7M" role="1TKVEi">
+      <property role="IQ2ns" value="2968276045130678770" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="resultaatFeiten" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2$LrPoxkdjM" resolve="FeitenGroep" />
     </node>
   </node>
   <node concept="1TIwiD" id="5bygWNlZw9o">
@@ -1280,6 +1297,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3ic2:4KQiE3qhHIs" resolve="Eigenschap" />
     </node>
+    <node concept="1TJgyj" id="4DUzVb$Ak2y" role="1TKVEi">
+      <property role="IQ2ns" value="5366759904467566754" />
+      <property role="20kJfa" value="regelgroep" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="m234:$infi2MuA0" resolve="Regelgroep" />
+    </node>
     <node concept="PrWs8" id="1Tu21UJWbH2" role="PzmwI">
       <ref role="PrY4T" node="6CT5F0$2IFv" resolve="ITeTestenEenheid" />
     </node>
@@ -1288,12 +1311,6 @@
     </node>
     <node concept="PrWs8" id="59kn773KyOi" role="PzmwI">
       <ref role="PrY4T" to="3ic2:7rG9cks_72j" resolve="IDimensieLabelSelectie" />
-    </node>
-    <node concept="1TJgyj" id="4DUzVb$Ak2y" role="1TKVEi">
-      <property role="IQ2ns" value="5366759904467566754" />
-      <property role="20kJfa" value="regelgroep" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="m234:$infi2MuA0" resolve="Regelgroep" />
     </node>
   </node>
   <node concept="1TIwiD" id="1EpFrJO22yV">
@@ -1781,6 +1798,58 @@
     </node>
     <node concept="PrWs8" id="5yztnPwm8y6" role="PzmwI">
       <ref role="PrY4T" node="5yztnPwm8y3" resolve="INavigeer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2$LrPoxkcOv">
+    <property role="EcuMT" value="2968276045130681631" />
+    <property role="TrG5h" value="Feit" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2$LrPoxmL2n" role="1TKVEi">
+      <property role="IQ2ns" value="2968276045131354263" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="rola" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:5EnECDug8O1" resolve="ObjectReference" />
+    </node>
+    <node concept="1TJgyj" id="2vCeLzQ_lzq" role="1TKVEi">
+      <property role="IQ2ns" value="2875613340478298330" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="rolb" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:5EnECDug8O1" resolve="ObjectReference" />
+    </node>
+    <node concept="1TJgyj" id="5iCUjhsVAtZ" role="1TKVEi">
+      <property role="IQ2ns" value="6100382106380035967" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="waarde" />
+      <ref role="20lvS9" to="3ic2:2xpqNdemRyM" resolve="Literal" />
+    </node>
+    <node concept="PrWs8" id="2MkFhHG4afB" role="PzmwI">
+      <ref role="PrY4T" to="3ic2:5EnECDug8OY" resolve="IObjectProvider" />
+    </node>
+    <node concept="PrWs8" id="5iCUjhDK9lB" role="PzmwI">
+      <ref role="PrY4T" to="3ic2:1RSyPHwU9yS" resolve="WaardeBepaling" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2$LrPoxkdjM">
+    <property role="EcuMT" value="2968276045130683634" />
+    <property role="TrG5h" value="FeitenGroep" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2$LrPoxke0v" role="1TKVEi">
+      <property role="IQ2ns" value="2968276045130686495" />
+      <property role="20kJfa" value="rol" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:4KQiE3qx$2O" resolve="Rol" />
+    </node>
+    <node concept="1TJgyj" id="2$LrPoxkf3y" role="1TKVEi">
+      <property role="IQ2ns" value="2968276045130690786" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="feiten" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2$LrPoxkcOv" resolve="Feit" />
+    </node>
+    <node concept="PrWs8" id="2vCeLzRmbNv" role="PzmwI">
+      <ref role="PrY4T" to="3ic2:5EnECDug8OY" resolve="IObjectProvider" />
     </node>
   </node>
 </model>

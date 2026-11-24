@@ -160,9 +160,20 @@
         <reference id="6527873696160724967" name="type" index="4OhPH" />
         <child id="6527873696160724965" name="eigenschappen" index="4OhPJ" />
       </concept>
+      <concept id="2968276045130681631" name="testspraak.structure.Feit" flags="ng" index="8oq99">
+        <child id="6100382106380035967" name="waarde" index="8hCTb" />
+        <child id="2968276045131354263" name="rola" index="8qBZ1" />
+        <child id="2875613340478298330" name="rolb" index="3hvmf2" />
+      </concept>
+      <concept id="2968276045130683634" name="testspraak.structure.FeitenGroep" flags="ng" index="8orI$">
+        <reference id="2968276045130686495" name="rol" index="8ooX9" />
+        <child id="2968276045130690786" name="feiten" index="8opYO" />
+      </concept>
       <concept id="7760345304267117455" name="testspraak.structure.IAbstractTest" flags="ngI" index="10x1HZ">
         <child id="6527873696160724992" name="situatie" index="4Ohaa" />
         <child id="6527873696160725067" name="resultaat" index="4Ohb1" />
+        <child id="2968276045130678770" name="resultaatFeiten" index="8oqU$" />
+        <child id="2968276045130666471" name="situatieFeiten" index="8ovUL" />
       </concept>
       <concept id="6363260678693757779" name="testspraak.structure.UitvoerVoorspelling" flags="ng" index="3mzBic">
         <property id="3984684955933690575" name="decimalen" index="V2jGk" />
@@ -255,6 +266,7 @@
       <concept id="1951710250232102541" name="gegevensspraak.structure.IKanDimensiesHebben" flags="ngI" index="3ixQ2G">
         <child id="1951710250232155848" name="dimensies" index="3ix_3D" />
       </concept>
+      <concept id="2907472902546487474" name="gegevensspraak.structure.Literal" flags="ng" index="1A0xe1" />
       <concept id="5917060184181247326" name="gegevensspraak.structure.NumeriekType" flags="ng" index="1EDDeX" />
       <concept id="5917060184181965945" name="gegevensspraak.structure.NumeriekeLiteral" flags="ng" index="1EQTEq" />
       <concept id="3257175120315973651" name="gegevensspraak.structure.AbstractNumeriekType" flags="ng" index="3GBOYg">
@@ -946,6 +958,37 @@
     </node>
     <node concept="210ffa" id="4n4p1iaVpJQ" role="10_$IM">
       <property role="TrG5h" value="verschillende onderwerpen in vergelijking" />
+      <node concept="8orI$" id="2vCeLzRbSlW" role="8oqU$">
+        <ref role="8ooX9" node="4n4p1iasQPM" resolve="fabrikant" />
+        <node concept="8oq99" id="2MkFhHJqfwD" role="8opYO">
+          <node concept="4PMub" id="2MkFhHJqfwE" role="8qBZ1">
+            <ref role="4PMuN" node="4n4p1iaVpJR" resolve="Batavus" />
+          </node>
+          <node concept="4PMub" id="2MkFhHJqfwF" role="3hvmf2">
+            <ref role="4PMuN" node="4n4p1iaVtZq" resolve="Urban" />
+          </node>
+        </node>
+      </node>
+      <node concept="8orI$" id="2vCeLzQ_gTY" role="8ovUL">
+        <ref role="8ooX9" node="4n4p1iasQPM" resolve="fabrikant" />
+        <node concept="8oq99" id="2vCeLzRtRea" role="8opYO">
+          <node concept="4PMub" id="2vCeLzRtReb" role="8qBZ1">
+            <ref role="4PMuN" node="4n4p1iaVpJS" resolve="Batavus" />
+          </node>
+          <node concept="4PMub" id="2vCeLzRtRec" role="3hvmf2">
+            <ref role="4PMuN" node="4n4p1iaVtZq" resolve="Urban" />
+          </node>
+          <node concept="1A0xe1" id="1PUrmZcuHMh" role="8hCTb" />
+        </node>
+        <node concept="8oq99" id="1PUrmZcuHMj" role="8opYO">
+          <node concept="4PMub" id="1PUrmZcuHMk" role="8qBZ1">
+            <ref role="4PMuN" node="1PUrmZcuIQm" resolve="Gazelle" />
+          </node>
+          <node concept="4PMub" id="1PUrmZcuHMl" role="3hvmf2">
+            <ref role="4PMuN" node="1PUrmZcuKUy" resolve="SuperSnel" />
+          </node>
+        </node>
+      </node>
       <node concept="4Oh8J" id="4n4p1iaVpJR" role="4Ohb1">
         <ref role="4Oh8G" node="4n4p1iasQNl" resolve="Fabrikant" />
         <ref role="3teO_M" node="4n4p1iaVpJS" resolve="Batavus" />
@@ -980,9 +1023,25 @@
             <property role="3e6Tb2" value="1000" />
           </node>
         </node>
+        <node concept="3_ceKt" id="2vCeLzRtHT7" role="4OhPJ">
+          <ref role="3_ceKs" node="4n4p1iaX6JR" resolve="model" />
+          <node concept="4PMua" id="2vCeLzRtHY6" role="3_ceKu">
+            <node concept="4PMub" id="2vCeLzRtI7E" role="4PMue">
+              <ref role="4PMuN" node="4n4p1iaVtZq" resolve="Urban" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="1PUrmZcuIQm" role="4Ohaa">
+        <property role="TrG5h" value="Gazelle" />
+        <ref role="4OhPH" node="4n4p1iasQNl" resolve="Fabrikant" />
+      </node>
+      <node concept="4OhPC" id="1PUrmZcuKUy" role="4Ohaa">
+        <property role="TrG5h" value="SuperSnel" />
+        <ref role="4OhPH" node="7_4_jU3L0oZ" resolve="FietsModel" />
       </node>
       <node concept="4OhPC" id="4n4p1iaVtZq" role="4Ohaa">
-        <property role="TrG5h" value="Dinsdag" />
+        <property role="TrG5h" value="Urban" />
         <ref role="4OhPH" node="7_4_jU3L0oZ" resolve="FietsModel" />
         <node concept="3_ceKt" id="4n4p1iaVulc" role="4OhPJ">
           <ref role="3_ceKs" node="7_4_jU3LiXt" resolve="prijs" />
@@ -1016,6 +1075,18 @@
     </node>
     <node concept="210ffa" id="4n4p1iaWZ3Q" role="10_$IM">
       <property role="TrG5h" value="verschillende onderwerpen in samengesteld predicaat" />
+      <node concept="8orI$" id="2vCeLzRtr4k" role="8ovUL">
+        <ref role="8ooX9" node="4n4p1iasQPM" resolve="fabrikant" />
+        <node concept="8oq99" id="2vCeLzRtrrJ" role="8opYO">
+          <node concept="4PMub" id="2vCeLzRtrrK" role="8qBZ1">
+            <ref role="4PMuN" node="4n4p1iaWZ3U" resolve="Batavus" />
+          </node>
+          <node concept="4PMub" id="2vCeLzRtrrL" role="3hvmf2">
+            <ref role="4PMuN" node="4n4p1iaWZ3X" resolve="Urban" />
+          </node>
+          <node concept="1A0xe1" id="1PUrmZcuNzb" role="8hCTb" />
+        </node>
+      </node>
       <node concept="4Oh8J" id="4n4p1iaWZ3R" role="4Ohb1">
         <ref role="4Oh8G" node="4n4p1iasQNl" resolve="Fabrikant" />
         <ref role="3teO_M" node="4n4p1iaWZ3U" resolve="Batavus" />
@@ -1052,7 +1123,7 @@
         </node>
       </node>
       <node concept="4OhPC" id="4n4p1iaWZ3X" role="4Ohaa">
-        <property role="TrG5h" value="Dinsdag" />
+        <property role="TrG5h" value="Urban" />
         <ref role="4OhPH" node="7_4_jU3L0oZ" resolve="FietsModel" />
         <node concept="3_ceKt" id="4n4p1iaWZ3Y" role="4OhPJ">
           <ref role="3_ceKs" node="7_4_jU3LiXt" resolve="prijs" />

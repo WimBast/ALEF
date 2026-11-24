@@ -889,6 +889,9 @@
     <node concept="PrWs8" id="1azGauang9G" role="PzmwI">
       <ref role="PrY4T" node="1GlRy79$FUd" resolve="IKanDimensiesHebben" />
     </node>
+    <node concept="PrWs8" id="5iCUjhDKVNc" role="PzmwI">
+      <ref role="PrY4T" to="dse8:6DHtdHSCR6W" resolve="LSlot" />
+    </node>
     <node concept="1TJgyj" id="3hFLKbdQMRe" role="1TKVEi">
       <property role="IQ2ns" value="3777331527337848270" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1002,8 +1005,8 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5EnECDug8OT" role="1TKVEi">
       <property role="IQ2ns" value="6527873696160320825" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="20kJfa" value="object" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5EnECDug8OS" resolve="IObject" />
     </node>
   </node>
